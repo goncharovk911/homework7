@@ -1,14 +1,14 @@
 var arr = [1, 22, 3, 11, 32, 6, 4, 7], newArr=[]
-var isPositive = (arr) => {
+var isNumberInRange = (arr) => {
     
     if (arr.length > 0) {
         var item = arr.shift();
-        item < 10 > 0 ? newArr.push(item) : isPositive(arr) 
-        isPositive(arr)
+        item < 10 > 0 ? newArr.push(item) : isNumberInRange(arr) 
+        isNumberInRange(arr)
        
     }
     return newArr
     
 }
-isPositive(arr)
+isNumberInRange(arr)
 console.log(newArr);
